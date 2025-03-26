@@ -26,7 +26,7 @@ passport.use(new WebAppStrategy({
 	clientId: "",
 	secret: "",
 	oauthServerUrl: "",
-	redirectUri: "" + CALLBACK_URL
+	redirectUri: "http://localhost:3000" + CALLBACK_URL
 }));
 
 passport.serializeUser(function(user, cb) {
