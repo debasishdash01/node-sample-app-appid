@@ -20,6 +20,7 @@ app.use(session({
  app.use(passport.initialize());
  app.use(passport.session());
 
+// Fetch the credentials from the IBM Cloud App ID Instance and paste below 
 passport.use(new WebAppStrategy({
 	tenantId: "",
 	clientId: "",
